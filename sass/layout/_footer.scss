@@ -1,0 +1,58 @@
+/*
+ * Footer Styles
+ */
+
+.site-footer{
+	padding: 50px 0;
+	text-align: center;
+}
+
+.social-links{
+	a{
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		border: 2px solid $accent-color;
+		display: inline-block;
+		margin: 0 5px;
+		line-height: 2;
+		transition: .3s ease;
+
+		&.facebook{
+			border-color: #204385;
+			color: #204385;
+
+			&:hover{
+				background: #204385;
+				color: white;
+			}
+		}
+		&.twitter{
+			border-color: #2aa9e0;
+			color: #2aa9e0;
+
+			&:hover{
+				background: #2aa9e0;
+				color: white;
+			}
+		}
+		&.google-plus{
+			border-color: #d3492c;
+			color: #d3492c;
+
+			&:hover{
+				background: #d3492c;
+				color: white;
+			}
+		}
+		&.pinterest{
+			border-color: #cb272e;
+			color: #cb272e;
+
+			&:hover{
+				background: #cb272e;
+				color: white;
+			}
+		}
+	}
+}

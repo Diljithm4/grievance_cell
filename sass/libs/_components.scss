@@ -1,0 +1,19 @@
+/*
+ * Reusable Components Style
+ */
+
+.button{
+	display: inline-block;
+	background: #9ead58;
+	background: linear-gradient(#9ead58,#719145);
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: white;
+	text-transform: uppercase;
+
+	&.brown{
+		background: #4e4235;
+		background: linear-gradient(#4e4235,#342b21);
+	}
+}

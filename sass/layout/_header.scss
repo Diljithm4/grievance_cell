@@ -1,0 +1,141 @@
+/*
+ * Header Styles
+ */
+
+.hero{
+	padding: 50px 0;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background-size: cover;
+
+	&:after{
+		content:" ";
+		position: absolute;
+		width: 100%;
+		height: 4000px;
+		// transform-origin: 0 center;
+		transform: skewX(-35deg);
+		background: white;
+		left: 0;
+		top:0;
+		display: block;
+		z-index: -1;
+
+		@media screen and (max-width:1280px){
+			left:-20%;
+		}
+	}
+
+	.hero-title{
+		color: white;
+		font-weight: 300;
+		@include em(48);
+		margin-bottom: 10px;
+	}
+	.hero-subtitle{
+		display: block;
+		color: white;
+		@include em(18);
+		margin-bottom: 50px;
+	}
+
+	.bottle{
+		float: left;
+		z-index: 1;
+		position: relative;
+	}
+	.product-features{
+		color: white;
+		display: table;
+		padding-left: 30px;
+		h2{@include em(18)}
+		
+	}
+	.check-list{
+		list-style: none;
+
+		li{
+			@include em(18);
+			padding: 10px 0 10px 40px;
+			position: relative;
+
+			&:before{
+				content:"\f00c";
+				font-family: FontAwesome;
+				color: $accent-color;
+				display: block;
+				position: absolute;
+				top:10px;
+				left:0;
+				width: 25px;
+				height: 25px;
+				border-radius: 50%;
+				background: white;
+				text-align: center;
+				@include em(12);
+				line-height: 1.6;
+			}
+		}
+	}
+	.ribbon{
+		background: $secondary-color;
+		display: table;
+		padding: 20px 0px 20px 40px;
+		@include em(27);
+		font-weight: 300;
+		color: white;
+		position: relative;
+		left: -20px;
+		margin-top: 30px;
+		height: 72px;
+		text-transform: uppercase;
+		line-height: normal;
+
+		@media screen and (max-width:990px){@include em(20)}
+
+		&:after{
+			content:" ";
+			border-width: 36px;
+			border-style: solid;
+			border-color: transparent transparent transparent $secondary-color;
+			position: absolute;
+			right: -72px;
+			top:0;
+		}
+	}
+
+	.request-form{
+		background: $secondary-color;
+		color: white;
+		padding: 10px 20px;
+		margin: 33px 0 50px;
+		position: relative;
+
+		@media screen and (max-width: 990px){margin-top: 150px;}
+
+		&:before,&:after{
+			content:" ";
+			width: 100%;
+			height: 33px;
+			background-repeat: no-repeat;
+			position: absolute;
+			left:0;
+		}
+
+		&:before{
+			background: url(images/form-top.png);
+			top:-33px;
+		}
+		&:after{
+			background: url(images/form-bottom.png);
+			bottom:-33px;
+			background-position: right bottom;
+		}
+	}
+	.security-logos{
+		@media screen and (max-width: 990px){
+			float: right;
+		}
+	}
+}
