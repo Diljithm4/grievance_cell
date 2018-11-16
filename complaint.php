@@ -57,13 +57,13 @@ compliant id<div class="control">
 <input type="text" name="cmpid" value="<?php echo  $c ?>">
 			</div>
 		
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;student<div class="control"><input type="radio" name="cmp" value="student" required>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;student<div class="control"><input type="radio" name="cmp" value="student">
 			</div>
 	
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;faculty<div class="control"><input type="radio" name="cmp" value="faculty" required>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;faculty<div class="control"><input type="radio" name="cmp" value="faculty">
 				</div>
 	
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;facility<div class="control"><input type="radio" name="cmp" value="facility" required>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;facility<div class="control"><input type="radio" name="cmp" value="facility">
 				</div>
 		
 <input type="submit" name="nxt" value="next">

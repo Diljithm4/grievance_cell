@@ -14,7 +14,7 @@ if(isset($_POST['act']))
 	$b=$_POST['b'];
 	$_SESSION['sam1']=$b;
 
-		header("Location:con_student_action.php"); 
+		header("Location:student_action.php"); 
 	
 }
      ?>

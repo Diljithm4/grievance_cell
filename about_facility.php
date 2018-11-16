@@ -8,7 +8,7 @@
 	<body>
 	<?php
 	
-	include 'student2.php';
+	include 'sample2.php';
 
 	$reg_id=$_SESSION['uid'];	
 	$cmp_id=$_SESSION['cid1'];	
@@ -60,7 +60,7 @@ canteen<input type="checkbox" name="cat[]" value="canteen">
 laboratory<input type="checkbox" name="cat[]" value="laboratory">
 electric<input type="checkbox" name="cat[]" value="electric">
 	</div>		
-complaint<div class="control"><textarea name="txt1" required></textarea></div>
+complaint<div class="control"><textarea name="txt1"></textarea></div>
 			
 			date<div class="control"><input type="text" name="dt" value="<?php echo date("Y/m/d") ?>"/></div>
 		

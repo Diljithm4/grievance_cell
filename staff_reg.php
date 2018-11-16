@@ -1,27 +1,6 @@
 <!DOCTYPE html>
 
 	<html>
-	<head>
-	<script type="text/javascript">
- function valid()
-			  {		
-			  
- if(f1.t3.value.length!=10)
- {
-   alert("phone number should be 10 digit...");
-    f1.t3.focus();
-   return false;
-  }
-  if(!isNaN(f1.t2.value))
-	    {
-		alert('Enter Name in character Format.');
-		    f1.t2.focus();
-	return false;
-		}
-  return true;
-			  }
-			  </script>
-			  </head>
 	<body>
 	<?php
 	include 'admin2.php';
@@ -54,18 +33,18 @@
 
 account id
 <div class="control">
-<input type="text" name="t1" value="" required="required"></div>
+<input type="text" name="t1" value=""></div>
 name
 <div class="control">
-<input type="text" name="t2" value="" required></div>
+<input type="text" name="t2" value=""></div>
 
 phone number
 <div class="control">
-<input type="number" name="t3" value="" required></div>
+<input type="text" name="t3" value=""></div>
 E-mail
 <div class="control">
-<input type="email" name="t4" value="" required></div>
-<input type="submit" name="b1" value="submit" onClick="return valid()">
+<input type="email" name="t4" value=""></div>
+<input type="submit" name="b1" value="submit">
 
 </form>
 </div>

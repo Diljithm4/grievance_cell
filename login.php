@@ -133,15 +133,20 @@
 				<div class="fullwidth-block cta" data-bg-image="images/footer-bg.jpg">
 					<div class="container">
 						<h2 class="cta-text">Get your own <strong>free sample</strong> today <br>and join the group of the beauty people</h2>
-						
+						<a href="#" class="button brown">Request a free sample</a>
 					</div>
 				</div>
 			</main> <!-- .main-content -->
 
 			<footer class="site-footer">
 				<div class="container">
-					
-						
+					<p>copyright 2014 Company name. Designed by Themezy. All rights reserved.</p>
+
+					<div class="social-links">
+						<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+						<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+						<a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
 					</div>
 				</div>
 			</footer> <!-- .site-footer -->

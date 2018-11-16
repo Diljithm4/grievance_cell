@@ -2,13 +2,25 @@
 
 	<html>
 	<head>
+	<script type="text/javascript">
+ function valid()
+			  {		
+  if(!isNaN(actn.actiontxt.value))
+	    {
+		alert('enter a valid action..');
+		    actn.actiontxt.focus();
+	return false;
+			  }
+			  return true;
+			  }
+			  </script>
 	<?php
 	session_start();
 	?>
 	</head>
 	<body>
 	<?php
-	include 'admin2.php';
+	include 'counceler2.php';
 	?>
 	<div class="site-content">
 	
@@ -50,7 +62,7 @@ $eve="ACTION_".$nid;
 $cmp1=$_SESSION['sam1'];
 
 ?>
-<form name="actn" method="POST" action="student_action1.php">
+<form name="actn" method="POST" action="con_student_action1.php">
 
 Action id<div class="control">
 <input type="text" name="actid"  value="<?php echo $eve ?>" ></div>
@@ -58,11 +70,11 @@ Complaint id<div class="control">
 <input type="text" name="cmpid" value="<?php echo $cmp1 ?>"></div>
 
 Action<div class="control">
-<input type="textarea" name="actiontxt"></textarea></div>
+<input type="textarea" name="actiontxt" required></textarea></div>
 date<div class="control">
 <input type="text" name="stdate" value="<?php echo date("Y/m/d") ?>"></div>
 
-<input type="submit" name="btn" value="proced">
+<input type="submit" name="btn" value="proced" onClick="return valid()">
 </form>
 
 

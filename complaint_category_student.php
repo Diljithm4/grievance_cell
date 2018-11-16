@@ -2,31 +2,6 @@
 
 	<html>
 	<head>
-	<script type="text/javascript">
- function valid()
-			  {		
-  if(!isNaN(f5.t5.value))
-	    {
-		alert('Enter Name in character Format.');
-		    f5.t5.focus();
-	return false;
-			  }
-		if(!isNaN(f5.txt1.value))
-	    {
-		alert('Enter a valid complaint...');
-		    f5.txt1.focus();
-	return false;
-		}
-		if(!isNaN(f5.wt1.value))
-	    {
-		alert('Enter Name in character Format.');
-		    f5.wt1.focus();
-	return false;
-		}
-		return true;
-			  }
-</script>		
-</head>
 	<?php
 	session_start();
 	?>
@@ -77,19 +52,19 @@
 				<input type="text" name="d1" value="<?php echo date("Y/m/d") ?>">
 			</div>
 		<div class="control">
-			ragging<input type="radio" value="ragging" name="cmp_type" required>
+			ragging<input type="radio" value="ragging" name="cmp_type" >
 		
-		politics<input type="radio" name="cmp_type" value="politics" required>
+		politics<input type="radio" name="cmp_type" value="politics">
 	
-	sexual abusement<input type="radio" name="cmp_type" value="sexual_abuse" required>
+	sexual abusement<input type="radio" name="cmp_type" value="sexual_abuse">
 
 	</div>
-			accused_name
+			name
 			<div class="control">
 			
 				<input type="text" name="t5">
 			</div>
-		accused_semester
+		SEMESTER
 	<div class="control">
 	<select name="t6">
 		<option value="" selected disabled hidden>-select-</option>
@@ -104,7 +79,7 @@
 	</select>
 	</div>
 		
-				accused_department
+				department
 			
 				<div class="control">
 			<select name="t7">
@@ -118,7 +93,7 @@
 			
 			
 		complaint<div class="control">
-	<textarea name="txt1" required></textarea></div>
+	<textarea name="txt1"></textarea></div>
 		
 			
 		
@@ -141,7 +116,7 @@ witness department<div class="control">
   <option value="MECH">MECH</option>				
 </select></div>
 			
-				<input type="submit" name="uu" value="submit" onClick="return valid()">
+				<input type="submit" name="uu" value="submit">
 			
 	</form>
 	

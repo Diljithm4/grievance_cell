@@ -1,37 +1,6 @@
 <!DOCTYPE html>
 
 	<html>
-	<head>
-	<script type="text/javascript">
- function valid()
-			  {		
-			  if(isNaN(f2.phno.value))
-	    {
-		alert('Enter Phone number in numeric format.');
-		    f2.phno.focus();
-
-		}
- if(f2.phno.value.length!=10)
- {
-   alert("phone number should be 10 digit...");
-    f2.phno.focus();
-   return false;
-  }
-  
-  
-  	if(!isNaN(f2.name.value))
-	    {
-		alert('Enter Name in character Format.');
-		    f2.name.focus();
-	return false;
-		}
-		
-		
-		
-  return true;
-			  }
-			  </script>
-			  </head>
 	<body>
 	<?php
 	include 'admin2.php';
@@ -63,15 +32,15 @@
 		
 	NAME<div class="control">
 					
-	<input type="text" name="name" required>
+	<input type="text" name="name">
 				</div>
 	STUDENT ID<div class="control">
 		
-	<input type="text" name="id" required>	
+	<input type="text" name="id">	
 		</div>
 			COURSE<div class="control">
 		
-	<select name="select1" required>
+	<select name="select1">
 		<option value="" selected disabled hidden>-select-</option>
 	<option>Btech</option>
 	<option>Mtech</option>
@@ -81,7 +50,7 @@
 				
 	SEMESTER
 	<div class="control">
-	<select name="select2" required>
+	<select name="select2">
 		<option value="" selected disabled hidden>-select-</option>
 	<option>S1</option>
 	<option>S2</option>
@@ -96,15 +65,15 @@
 			
 	E-mail
 				<div class="control">
-	<input type="email" name="email" required>
+	<input type="email" name="email">
 				</div>
 	PHONE NO
 				<div class="control">
-	 <input type="text" name="phno" required>
+	<input type="text" name="phno">
 				</div>
 			
 	
-	<input type="submit" name="submit" value="SUBMIT" onClick="return valid()">
+	<input type="submit" name="submit" value="SUBMIT">
 				
 	</form>
 	</div>

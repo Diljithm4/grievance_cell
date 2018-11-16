@@ -60,7 +60,7 @@
 		<nav class="navbar navbar-default">
 			<div class="container">
 				<div class="navbar-header navbar-left">
-					<h1><a href="counceler.php">Grievance Cell</a></h1>
+					<h1><a href="index.html">Grievance Cell</a></h1>
 				</div>
 				<!-- navigation --> 
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">

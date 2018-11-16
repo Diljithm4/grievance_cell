@@ -8,7 +8,7 @@ session_start();
 <body>
 <?php
 
-	include 'student2.php';
+	include 'sample2.php';
 $sid=$_SESSION['uid'];
 $cid=$_SESSION['cid'];
 $cid01=$_SESSION['cid1'];
@@ -46,7 +46,7 @@ registration id
 faculty-name
 <div class="control">
 <input type="text" name="fname"></div>
-department
+Branch
 <div class="control">
 <select name="s1"><option value="" selected disabled hidden>-select-</option>
 <option>MCA</option>
@@ -55,10 +55,10 @@ department
 </select></div>
 <div class="control">
 <center>compliant-type</center>
-<input type="radio" name="x1" value="sexual_abuse" required>sexual abuse
-<input type="radio" name="x1" value="ragging" required>ragging
-<input type="radio" name="x1" value="harrasment" required>harrasment
-<input type="radio" name="x1" value="politics"required>politics
+<input type="radio" name="x1" value="sexual_abuse">sexual abuse
+<input type="radio" name="x1" value="ragging">ragging
+<input type="radio" name="x1" value="harrasment">harrasment
+<input type="radio" name="x1" value="politics">politics
 
 </div>
 
@@ -68,7 +68,7 @@ department
 <input type="radio" name="x" value="student">student
 <input type="radio" name="x" value="no">no witness
 </div>
-if any specify name	and branch:
+if any specify name,course:
 <div class="control">
 <input type="text" name="wn" >
 </div>
@@ -80,7 +80,7 @@ if any specify name	and branch:
 </select></div>
 complaint
 <div class="control">
-<textarea name="cmptxt" required>
+<textarea name="cmptxt">
 </textarea>
 </div>
 date
