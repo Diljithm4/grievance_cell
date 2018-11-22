@@ -1,6 +1,58 @@
 <!DOCTYPE html>
 
 	<html>
+	<head>
+	<script type="text/javascript">
+	function valid()
+	{
+		var x=f2.phn.value.length;
+		if(f2.name.value=="")
+		{
+		alert("enter your name")//f2.name.value="enter your name";
+		    
+
+		return false;
+		}
+		if(!isNaN(f2.name.value))
+	    {
+		alert("name must be in charecter format")//f2.name.value="name must be character format";
+		  
+	return false;
+		}
+		if(f2.id.value=="")
+		{
+		alert("enter your id")//f2.id.value="enter your id";
+		    
+
+		return false;
+		}
+		
+		if(f2.email.value=="")
+		{
+		alert("enter your mail id")//f2.email.value="enter your email";
+		    
+
+		return false;
+		}
+		if(isNaN(f2.phn.value))
+	    {
+		alert("phone number must be in numeric value")//f2.phn.value="phone number must be number format";
+		  
+	return false;
+		}
+		
+		if(x!=10)
+		{
+			alert("invalid phone number")//f2.phn.value="invalid phone number";
+			
+			return false;
+		}
+		
+		
+		return true;
+	}
+	</script>
+	</head>
 	<body>
 	<?php
 	include 'admin2.php';
@@ -40,7 +92,7 @@
 		</div>
 			COURSE<div class="control">
 		
-	<select name="select1">
+	<select name="select1" required>
 		<option value="" selected disabled hidden>-select-</option>
 	<option>Btech</option>
 	<option>Mtech</option>
@@ -50,7 +102,7 @@
 				
 	SEMESTER
 	<div class="control">
-	<select name="select2">
+	<select name="select2" required>
 		<option value="" selected disabled hidden>-select-</option>
 	<option>S1</option>
 	<option>S2</option>
@@ -69,11 +121,11 @@
 				</div>
 	PHONE NO
 				<div class="control">
-	<input type="text" name="phno">
+	<input type="text" name="phn">
 				</div>
 			
 	
-	<input type="submit" name="submit" value="SUBMIT">
+	<input type="submit" name="submit" value="SUBMIT" onClick="return valid();">
 				
 	</form>
 	</div>

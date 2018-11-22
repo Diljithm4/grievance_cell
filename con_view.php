@@ -16,9 +16,9 @@ $_SESSION['r1']=$r;
       
 	if($r=="faculty")
 	
-		header("Location:con_faculty_new.php");
+		header("Location:con_faculty.php");
 	else
-		header("Location:con_student_new.php");
+		header("Location:con_student.php");
 
 
 		?>

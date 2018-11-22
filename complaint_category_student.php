@@ -2,6 +2,20 @@
 
 	<html>
 	<head>
+	<script type="text/javascript">
+	function valid()
+	{
+		
+		if(!isNaN(f2.txt1.value))
+	    {
+		alert('Enter valid complaint.');
+		    f2.txt1.focus();
+	return false;
+			  }
+		
+		return true;
+	}
+	</script>
 	<?php
 	session_start();
 	?>
@@ -37,7 +51,7 @@
 	$cmp_id=$_SESSION['cid1'];	
 
 	?>
-	<form name="f5" action="complaint_category_student1.php" method="post">
+	<form name="f2" action="complaint_category_student1.php" method="post">
 	complaint_id<div class="control">
 			
 	<input type="text" name="t1" value="<?php echo $cmp_id ?>">
@@ -52,21 +66,21 @@
 				<input type="text" name="d1" value="<?php echo date("Y/m/d") ?>">
 			</div>
 		<div class="control">
-			ragging<input type="radio" value="ragging" name="cmp_type" >
+			ragging<input type="radio" value="ragging" name="cmp_type" required >
 		
-		politics<input type="radio" name="cmp_type" value="politics">
+		politics<input type="radio" name="cmp_type" value="politics" required>
 	
-	sexual abusement<input type="radio" name="cmp_type" value="sexual_abuse">
+	sexual abusement<input type="radio" name="cmp_type" value="sexual_abuse" required>
 
 	</div>
-			name
+			accused name
 			<div class="control">
 			
 				<input type="text" name="t5">
 			</div>
 		SEMESTER
 	<div class="control">
-	<select name="t6">
+	<select name="t6" >
 		<option value="" selected disabled hidden>-select-</option>
 	<option>S1</option>
 	<option>S2</option>
@@ -82,7 +96,8 @@
 				department
 			
 				<div class="control">
-			<select name="t7">
+			<select name="t7" >
+			<option value="" selected disabled hidden>-select-</option>
   <option value="MCA">MCA</option>
   <option value="M.Tech">M.Tech</option>
   <option value="CIVIL">CIVIL</option>
@@ -92,8 +107,8 @@
 </select></div>
 			
 			
-		complaint<div class="control">
-	<textarea name="txt1"></textarea></div>
+		complaint<div class="control" required>
+	<textarea name="txt1" required></textarea></div>
 		
 			
 		
@@ -108,6 +123,7 @@
 
 witness department<div class="control">
 			<select name="v3">
+			<option value="" selected disabled hidden>-select-</option>
   <option value="MCA">MCA</option>
   <option value="M.Tech">M.Tech</option>
   <option value="CIVIL">CIVIL</option>
@@ -116,7 +132,7 @@ witness department<div class="control">
   <option value="MECH">MECH</option>				
 </select></div>
 			
-				<input type="submit" name="uu" value="submit">
+				<input type="submit" name="uu" value="submit" onClick="return valid();">
 			
 	</form>
 	

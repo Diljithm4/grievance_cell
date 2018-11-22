@@ -4,7 +4,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Compass Starter by Ariona, Rian</title>
+		<title>Counsellor</title>
 
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|" rel="stylesheet" type="text/css">
@@ -68,7 +68,8 @@
 		<nav class="navbar navbar-default">
 			<div class="container">
 				<div class="navbar-header navbar-left">
-					<h1><a href="index.html">Grievance Cell</a></h1>
+					<h1><a href="counceler.php">Grievance Cell</a></h1>
+					<h3>Counsellor</h3>
 				</div>
 				<!-- navigation --> 
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -82,9 +83,14 @@
 					<ul class="nav navbar-nav navbar-left">
 						
 					
-						<li><a href="con_view_complaint.php" class="link link--yaku"><span>C</span><span>O</span><span>M</span><span>P</span><span>L</span><span>A</span><span>I</span><span>N</span><span>T</span></a></li>
+						<li><a href="con_view_complaint.php" class=""><span>C</span><span>O</span><span>M</span><span>P</span><span>L</span><span>A</span><span>I</span><span>N</span><span>T</span></a></li>
 					
-				<li><a href="login.php" class="link link--yaku"><span>L</span><span>O</span><span>G</span><span>O</span><span>U</span><span>T</span></a></li>			
+				<li><a href="#" class="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>M</span><span>Y</span><span> </span><span>A</span><span>C</span><span>C</span><span>O</span><span>U</span><span>N</span><span>T</span> <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="login.php" class=""><span>L</span><span>O</span><span>G</span><span>O</span><span>U</span><span>T</span></a></li>
+								<li><a href="con_change_psw.php" class=""><span>C</span><span>H</span><span>A</span><span>N</span><span>G</span><span>E</span><span>  </span><span>P</span><span>A</span><span>S</span><span>S</span><span>W</span><span>O</span><span>R</span><span>D</span></a></li>
+							</ul>
+						</li>
 					<div class="clearfix"> </div>
 				</div><!-- //navigation --> 
 			</div>	

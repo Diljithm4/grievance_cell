@@ -29,9 +29,10 @@ include 'admin3.php';
 								<font color="#000">
                                     <thead>
                                         <tr>
+										<th>VICTIM NAME</th>	
                                             <th>COMPLAINT TYPE</th>
 		<th>ACCUSSED TYPE</th>
-		<th>NAME</th>	
+		<th>ACCUSED NAME</th>	
 		<th>COMPLAINT</th>
 		<TH>DATE</TH>	
 		
@@ -45,12 +46,13 @@ include 'admin3.php';
                                         <?php
 			include 'dbcon.php';
 			
-			    $query="select *from complaint_student order by complaint_type";
+			    $query="select name,complaint_type,accused_type,accused_name,complaint,date from student,complaint_student where student.reg_id=complaint_student.reg_id order by complaint_type";
                 $result=mysqli_query($conn,$query);
 			    
 				while ($row = mysqli_fetch_array($result)) 
 				{
 				?>
+				<td><?php echo $row['name']?></td>
 				<td><?php echo $row['complaint_type']?></td>
 			<td><?php echo $row['accused_type']?></td>	
 			<td> <?php echo $row['accused_name'] ?></td>

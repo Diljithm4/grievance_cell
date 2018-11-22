@@ -22,28 +22,25 @@
 						<div class="col-md-4">
 						<br>
 						<br>
-						
+						<br>
+						<br>
+						<br>
+						<br>
 						<br>
 							<div class="request-form">
-<form name="cmpview" method="POST" action="con_view.php">
+	<form action="con_faculty1.php" method="post">
+	<div class="control">
+	<input type="radio" name="rd" value="new" required>new complaints
+	<input type="radio" name="rd" value="pending" required>pending complaint
+	</div>
+	<input type="submit" name="bt1" value="next">
+	</form>
+	
+	
+	</div>
 
-				<div class="control">
-										
-                                     <input type="radio" name="adm" value="faculty" required>faculty
-									
-									  <input type="radio" name="adm" value="student" required>student
-									 
-								</div>
-																		
-
-<input type="submit" name="btn" value="submit">
-</form>
-
-
-</div>
-
-							
-	</div>					
+						</div>	
+						
 						</div>
 							
 					</div>
@@ -54,7 +51,6 @@
 			
 			</div>
 			
-							</body>
-							</html>
-			
-		
+</body>
+	
+</html>

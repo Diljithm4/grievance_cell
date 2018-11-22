@@ -22,7 +22,7 @@
 							
 						</div>
 						<div class="navbar-header navbar-left">
-	<h1><a href="index.html"><font color="green"><b>Develop a passsion for learning.If you do,<br> You will never cease to grow. </b></font></a></h1>
+	<h1><font color="green"><b>Develop a passsion for learning.If you do,<br> You will never cease to grow. </b></font></a></h1>
 				
 						<div class="col-md-4">
 						<br>
@@ -58,10 +58,12 @@ Complaint id<div class="control">
 <input type="text" name="cmpid" value="<?php echo $cmp1 ?>"></div>
 
 Action<div class="control">
-<input type="textarea" name="actiontxt"></textarea></div>
+<input type="textarea" name="actiontxt" required></textarea></div>
 date<div class="control">
 <input type="text" name="stdate" value="<?php echo date("Y/m/d") ?>"></div>
-
+<div class="control">
+completed<input type="radio" name="st" value="con_completed" required>
+pending<input type="radio" name="st" value="con_pending" required></div>
 <input type="submit" name="btn" value="proced">
 </form>
 

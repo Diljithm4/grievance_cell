@@ -1,14 +1,29 @@
 <html>
 <head>
 <title>complaint about-faculty</title>
+<script type="text/javascript"> 
+function valid()
+	{
+		
+		if(!isNaN(complaintfclty.cmptxt.value))
+	    {
+		alert('Enter valid complaint.');
+		    complaintfclty.cmptxt.focus();
+	return false;
+			  }
+		
+		return true;
+	}
+</script>
 <?php
 session_start();
 ?>
 </head>
+
 <body>
 <?php
 
-	include 'sample2.php';
+	include 'admin2.php';
 $sid=$_SESSION['uid'];
 $cid=$_SESSION['cid'];
 $cid01=$_SESSION['cid1'];
@@ -45,28 +60,28 @@ registration id
 <input type="text" name="regid" value="<?php echo $sid ?>" ></div>
 faculty-name
 <div class="control">
-<input type="text" name="fname"></div>
+<input type="text" name="fname" ></div>
 Branch
 <div class="control">
-<select name="s1"><option value="" selected disabled hidden>-select-</option>
+<select name="s1" ><option value="" selected disabled hidden>-select-</option>
 <option>MCA</option>
 <option>Btech</option>
 <option>Mtech</option><br>
 </select></div>
-<div class="control">
+<div class="control" required>
 <center>compliant-type</center>
-<input type="radio" name="x1" value="sexual_abuse">sexual abuse
-<input type="radio" name="x1" value="ragging">ragging
-<input type="radio" name="x1" value="harrasment">harrasment
-<input type="radio" name="x1" value="politics">politics
+<input type="radio" name="x1" value="sexual_abuse" required >sexual abuse
+<input type="radio" name="x1" value="ragging" required>ragging
+<input type="radio" name="x1" value="harrasment" required>harrasment
+<input type="radio" name="x1" value="politics"required>politics
 
 </div>
 
 <center>type of witness</center>
-<div class="control">
-<input type="radio" name="x" value="faculty">faculty
+<div class="control" >
+<input type="radio" name="x" value="faculty" >faculty
 <input type="radio" name="x" value="student">student
-<input type="radio" name="x" value="no">no witness
+<input type="radio" name="x" value="no" required >no witness
 </div>
 if any specify name,course:
 <div class="control">
@@ -79,17 +94,17 @@ if any specify name,course:
 <option>Mtech</option>
 </select></div>
 complaint
-<div class="control">
-<textarea name="cmptxt">
+<div class="control" >
+<textarea name="cmptxt" required>
 </textarea>
 </div>
 date
-<div class="control">
+<div class="control" >
 <input type="text" name="cdate" value="<?php echo date("Y/m/d") ?>">
 </div>
 
 
-<input type="submit" name="sbt" value="submit">
+<input type="submit" name="sbt" value="submit" onClick="return valid();">
 </form>
 
 

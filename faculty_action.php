@@ -58,7 +58,7 @@ Complaint id<div class="control">
 <input type="text" name="cmpid" value="<?php echo $cmp1 ?>"></div>
 
 Action<div class="control">
-<input type="textarea" name="actiontxt"></textarea></div>
+<input type="textarea" name="actiontxt" required></textarea></div>
 date<div class="control">
 <input type="text" name="stdate" value="<?php echo date("Y/m/d") ?>"></div>
 <div class="control">

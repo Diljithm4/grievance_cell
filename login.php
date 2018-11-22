@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+	
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Compass Starter by Ariona, Rian</title>
+		<title>Grievance cell</title>
 
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|" rel="stylesheet" type="text/css">
@@ -27,7 +28,8 @@
 		<div class="site-content">
 			<div class="hero" data-bg-image="images/n.jpg">
 				<div class="container">
-				<font colr="red" face="chiller" size="60"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GRIEVANCE CELL<b></font>
+				<font colr="red" face="chiller" size="60"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GRIEVANCE CELL <b></font>
+				<font colr="red" face="chiller" size="60"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AWH ENGINEERING COLLEGE<b></font>
 					<div class="row">
 		
 						<div class="col-md-8">
@@ -43,22 +45,22 @@
 						<br>
 						<br>
 							<div class="request-form">
-								<form action="log.php" method="post">
+								<form action="log.php" method="post" name="f1">
 									<h2 class="form-title">Login Pls......</h2>
 									<br>
 
 									<div class="control">
-										<input type="text" placeholder="Your name..." name="uname">
+										<input type="text" placeholder="Your name..." name="uname" required>
 										<i class="fa fa-user"></i>
 									</div>
 																		<div class="control">
-										<input type="password" placeholder="Your password..." name="pname">
+										<input type="password" placeholder="Your password..." name="pname" required>
 										<i class="fa fa-user"></i>
 									</div>
 									
 									
 
-									<input type="submit" value="Login">
+									<input type="submit" value="Login" onClick="return valid()" />
 								</form>
 							</div>
 
@@ -68,88 +70,7 @@
 				</div>
 			</div> <!-- .hero -->
 
-			<main class="main-content">
-				<div class="fullwidth-block">
-					<div class="container">
-						<div class="row ingredient">
-							<div class="col-md-4"><img src="images/s1.png" alt=""></div>
-							<div class="col-md-8">
-								<h2>Made of natural flower</h2>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.</p>
-							</div>
-						</div>
-						<div class="row ingredient">
-							<div class="col-md-4"><img src="images/s2.jpg" alt=""></div>
-							<div class="col-md-8">
-								<h2>High quality ingredients</h2>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.</p>
-							</div>
-						</div>
-						<div class="row ingredient">
-							<div class="col-md-4"><img src="images/s3.jpg" alt=""></div>
-							<div class="col-md-8">
-								<h2>Used in Spa &amp; Welness</h2>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="fullwidth-block" data-bg-color="#EEE">
-					<div class="container">
-						<h2 class="section-title">What people say</h2>
-						<div class="row">
-							<div class="col-md-3 col-sm-6">
-								<div class="testimonial">
-									<img src="images/person-1.jpg" alt="" class="user-avatar">
-									<p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-									<cite>John Parias</cite>,<span class="title">Writer</span>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="testimonial">
-									<img src="images/person-2.jpg" alt="" class="user-avatar">
-									<p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-									<cite>Sarah Dowson</cite>,<span class="title">Teacher</span>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="testimonial">
-									<img src="images/person-3.jpg" alt="" class="user-avatar">
-									<p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-									<cite>Richard Marks</cite>,<span class="title">Athlete</span>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-6">
-								<div class="testimonial">
-									<img src="images/person-4.jpg" alt="" class="user-avatar">
-									<p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-									<cite>Susie Branson</cite>,<span class="title">Designer</span>
-								</div>
-							</div>
-						</div> <!-- .row -->
-					</div> <!-- .container -->
-				</div>
-
-				<div class="fullwidth-block cta" data-bg-image="images/footer-bg.jpg">
-					<div class="container">
-						<h2 class="cta-text">Get your own <strong>free sample</strong> today <br>and join the group of the beauty people</h2>
-						<a href="#" class="button brown">Request a free sample</a>
-					</div>
-				</div>
-			</main> <!-- .main-content -->
-
-			<footer class="site-footer">
-				<div class="container">
-					<p>copyright 2014 Company name. Designed by Themezy. All rights reserved.</p>
-
-					<div class="social-links">
-						<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-						<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-						<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-						<a href="#" class="pinterest"><i class="fa fa-pinterest"></i></a>
-					</div>
-				</div>
-			</footer> <!-- .site-footer -->
+			
 		</div>
 
 		<script src="js/jquery-1.11.1.min.js"></script>

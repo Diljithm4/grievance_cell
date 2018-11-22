@@ -4,7 +4,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Compass Starter by Ariona, Rian</title>
+		<title>Student</title>
 
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|" rel="stylesheet" type="text/css">
@@ -45,7 +45,8 @@
 		<nav class="navbar navbar-default">
 			<div class="container">
 				<div class="navbar-header navbar-left">
-					<h1><a href="index.html">Grievance Cell</a></h1>
+					<h1><a href="student.php">Grievance Cell</a></h1>
+					<h3>Student</h3>
 				</div>
 				<!-- navigation --> 
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -61,15 +62,15 @@
 					
 						
 							
-						<li><a href="complaint.php" class="link link--yaku"><span>C</span><span>O</span><span>M</span><span>P</span><span>L</span><span>A</span><span>I</span><span>N</span><span>T</span></a></li>
+						<li><a href="complaint.php" class=""><span>C</span><span>O</span><span>M</span><span>P</span><span>L</span><span>A</span><span>I</span><span>N</span><span>T</span></a></li>
 					
-				<li><a href="feedback.php" class="link link--yaku"><span>F</span><span>E</span><span>E</span><span>D</span><span>B</span><span>A</span><span>C</span><span>K</span></a></li>			
+				<li><a href="feedback.php" class=""><span>F</span><span>E</span><span>E</span><span>D</span><span>B</span><span>A</span><span>C</span><span>K</span></a></li>			
 				
 
-<li><a href="#" class="dropdown-toggle link link--yaku" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>M</span><span>Y</span><span> </span><span>A</span><span>C</span><span>C</span><span>O</span><span>U</span><span>N</span><span>T</span> <span class="caret"></span></a>
+<li><a href="#" class="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>M</span><span>Y</span><span> </span><span>A</span><span>C</span><span>C</span><span>O</span><span>U</span><span>N</span><span>T</span> <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="login.php" class="link link--yaku"><span>L</span><span>O</span><span>G</span><span>O</span><span>U</span><span>T</span></a></li>
-								<li><a href="change_pswd.php" class="link link--yaku"><span>C</span><span>H</span><span>A</span><span>N</span><span>G</span><span>E</span><span>  </span><span>P</span><span>A</span><span>S</span><span>S</span><span>W</span><span>O</span><span>R</span><span>D</span></a></li>
+								<li><a href="login.php" class=""><span>L</span><span>O</span><span>G</span><span>O</span><span>U</span><span>T</span></a></li>
+								<li><a href="change_pswd.php" class=""><span>C</span><span>H</span><span>A</span><span>N</span><span>G</span><span>E</span><span>  </span><span>P</span><span>A</span><span>S</span><span>S</span><span>W</span><span>O</span><span>R</span><span>D</span></a></li>
 							</ul>
 						</li>
 				<div class="clearfix"> </div>

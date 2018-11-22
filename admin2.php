@@ -4,7 +4,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
 		
-		<title>Compass Starter by Ariona, Rian</title>
+		<title>Admin</title>
 
 		<!-- Loading third party fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|" rel="stylesheet" type="text/css">
@@ -60,7 +60,8 @@
 		<nav class="navbar navbar-default">
 			<div class="container">
 				<div class="navbar-header navbar-left">
-					<h1><a href="index.html">Grievance Cell</a></h1>
+					<h1><a href="admin.php">Grievance Cell</a></h1>
+					<h3>Admin</h3>
 				</div>
 				<!-- navigation --> 
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -73,21 +74,21 @@
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">					
 					<ul class="nav navbar-nav navbar-left">
 						
-					<li><a href="#" class="dropdown-toggle link link--yaku" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>R</span><span>E</span><span>G</span><span>I</span><span>S</span><span>T</span><span>R</span><span>A</span><span>T</span><span>I</span><span>O</span><span>N</span> <span class="caret"></span></a>
+					<li><a href="#" class="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>R</span><span>E</span><span>G</span><span>I</span><span>S</span><span>T</span><span>R</span><span>A</span><span>T</span><span>I</span><span>O</span><span>N</span> <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="studentreg.php" class="link link--yaku"><span>S</span><span>T</span><span>U</span><span>D</span><span>E</span><span>N</span><span>T</span></a></li>
-								<li><a href="staff_reg.php" class="link link--yaku"><span>S</span><span>T</span><span>A</span><span>F</span><span>F</span></a></li>
+								<li><a href="studentreg.php" class=""><span>S</span><span>T</span><span>U</span><span>D</span><span>E</span><span>N</span><span>T</span></a></li>
+								<li><a href="staff_reg.php" class=""><span>S</span><span>T</span><span>A</span><span>F</span><span>F</span></a></li>
 							</ul>
 						</li>
-						<li><a href="#" class="dropdown-toggle link link--yaku" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>R</span><span>E</span><span>P</span><span>O</span><span>R</span><span>T</span> <span class="caret"></span></a>
+						<li><a href="#" class="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>R</span><span>E</span><span>P</span><span>O</span><span>R</span><span>T</span> <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="full_report.php" class="link link--yaku"><span>F</span><span>U</span><span>L</span><span>L</span><span>  </span><span>R</span><span>E</span><span>P</span><span>O</span><span>R</span><span>T</span></a></li>
-								<li><a href="detail.php" class="link link--yaku"><span>S</span><span>I</span><span>N</span><span>G</span><span>L</span> <span>E</span> </span><span>R</span><span>E</span><span>P</span><span>O</span><span>R</span><span>T</span</a></li>
+								<li><a href="full_report.php" class=""><span>F</span><span>U</span><span>L</span><span>L</span><span>  </span><span>R</span><span>E</span><span>P</span><span>O</span><span>R</span><span>T</span></a></li>
+								<li><a href="detail.php" class=""><span>S</span><span>I</span><span>N</span><span>G</span><span>L</span> <span>E</span> </span><span>R</span><span>E</span><span>P</span><span>O</span><span>R</span><span>T</span</a></li>
 							</ul>
 							
-						<li><a href="view_complaint.php" class="link link--yaku"><span>C</span><span>O</span><span>M</span><span>P</span><span>L</span><span>A</span><span>I</span><span>N</span><span>T</span></a></li>
+						<li><a href="view_complaint.php" class=""><span>C</span><span>O</span><span>M</span><span>P</span><span>L</span><span>A</span><span>I</span><span>N</span><span>T</span></a></li>
 					
-				<li><a href="login.php" class="link link--yaku"><span>L</span><span>O</span><span>G</span><span>O</span><span>U</span><span>T</span></a></li>			
+				<li><a href="login.php" class=""><span>L</span><span>O</span><span>G</span><span>O</span><span>U</span><span>T</span></a></li>			
 					<div class="clearfix"> </div>
 				</div><!-- //navigation --> 
 			</div>	

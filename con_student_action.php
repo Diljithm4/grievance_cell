@@ -73,7 +73,9 @@ Action<div class="control">
 <input type="textarea" name="actiontxt" required></textarea></div>
 date<div class="control">
 <input type="text" name="stdate" value="<?php echo date("Y/m/d") ?>"></div>
-
+<div class="control">
+completed<input type="radio" name="st" value="con_completed" required>
+pending<input type="radio" name="st" value="con_pending" required></div>
 <input type="submit" name="btn" value="proced" onClick="return valid()">
 </form>
 

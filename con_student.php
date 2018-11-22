@@ -28,7 +28,7 @@
 						<br>
 						<br>
 							<div class="request-form">
-	<form action="cmp_facility1.php" method="post">
+	<form action="con_student1.php" method="post">
 	<div class="control">
 	<input type="radio" name="rd" value="new" required>new complaints
 	<input type="radio" name="rd" value="pending" required>pending complaint

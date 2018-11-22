@@ -17,7 +17,7 @@
 							
 						</div>
 						<div class="navbar-header navbar-left">
-	<h1><a href="index.html"><font color="green"><b>Develop a passsion for learning.If you do,<br> You will never cease to grow. </b></font></a></h1>
+	<h1><font color="green"><b>Develop a passsion for learning.If you do,<br> You will never cease to grow. </b></font></a></h1>
 				
 						<div class="col-md-4">
 						<br>
@@ -28,11 +28,11 @@
 <form name="cmpview" method="POST" action="view.php">
 
 				<div class="control">
-										<input type="radio" name="adm" value="facility">facility
+										<input type="radio" name="adm" value="facility" required>facility
 										
-                                     <input type="radio" name="adm" value="faculty">faculty
+                                     <input type="radio" name="adm" value="faculty" required>faculty
 									
-									  <input type="radio" name="adm" value="student">student
+									  <input type="radio" name="adm" value="student" required>student
 									 
 								</div>
 																		

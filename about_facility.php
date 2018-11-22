@@ -1,5 +1,19 @@
 <html>
 <head>
+<script type="text/javascript">
+	function valid()
+	{
+		
+		if(!isNaN(facility.txt1.value))
+	    {
+		alert('Enter valid complaint.');
+		    facility.txt1.focus();
+	return false;
+			  }
+		
+		return true;
+	}
+	</script>
 <title>about facility</title>
 	<?php
 	session_start();
@@ -8,7 +22,7 @@
 	<body>
 	<?php
 	
-	include 'sample2.php';
+	include 'admin2.php';
 
 	$reg_id=$_SESSION['uid'];	
 	$cmp_id=$_SESSION['cid1'];	
@@ -54,18 +68,18 @@ complaint id <div class="control"><input type="text" name="t2" value="<?php echo
 category of facility complaint
 	<div class="control">
 library<input type="checkbox" name="cat[]" value="library">
-sanitary<input type="checkbox" name="cat[]" value="sanitary">
-water<input type="checkbox" name="cat[]" value="water">
+sanitary<input type="checkbox" name="cat[]" value="sanitary" >
+water<input type="checkbox" name="cat[]" value="water" >
 canteen<input type="checkbox" name="cat[]" value="canteen">
 laboratory<input type="checkbox" name="cat[]" value="laboratory">
-electric<input type="checkbox" name="cat[]" value="electric">
+electric<input type="checkbox" name="cat[]" value="electric" >
 	</div>		
-complaint<div class="control"><textarea name="txt1"></textarea></div>
+complaint<div class="control"><textarea name="txt1" required></textarea></div>
 			
 			date<div class="control"><input type="text" name="dt" value="<?php echo date("Y/m/d") ?>"/></div>
 		
 
-<input type="submit" name="sb" value="submit">
+<input type="submit" name="sb" value="submit" onClick="return valid();">
 			
 </form>
 </div>

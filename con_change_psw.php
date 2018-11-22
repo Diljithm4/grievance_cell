@@ -20,7 +20,7 @@
 	</head>
 	<body>
 	<?php
-	include 'student2.php';
+	include 'counceler2.php';
 	?>
 	<div class="site-content">
 	
