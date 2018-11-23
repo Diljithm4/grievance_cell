@@ -36,7 +36,7 @@
 						<br>
 						
 							<div class="request-form">
-	<form name="f11" method="POST" action="col_faculty_action.php">
+	<form name="f11" method="POST" action="con_faculty_action.php">
 		<?php 
 		$cat=$_SESSION['r1'];
 		include 'dbcon.php';
