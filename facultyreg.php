@@ -32,6 +32,7 @@ $eve="STAFF_".$nid;
 <input type="text" name="phn" value>
 <label>E-mail</label>
 <input type="email" name="mail" value="">
+<input type="reset" name="cancel" value="cnl">
 	<input type="reset" name="reset" value="RESET">
 <input type="submit"name="b1" value="SUBMIT">
 </form>
